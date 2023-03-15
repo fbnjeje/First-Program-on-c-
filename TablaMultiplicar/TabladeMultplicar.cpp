@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 	
-	int opc,numeroTbl;
+	int opc,numeroTbl,i;
 	
 	cout<<"\tCon que bucle quiere hacer la tabla"<<endl;
 	cout<<"1.For"<<endl;
@@ -19,19 +19,26 @@ int main(){
 	switch(opc){
 		case 1:
 			
-			for(int i = 1;i<=10;i++){
+			for(i = 1;i<=10;i++){
 				cout<<numeroTbl<<" X "<<i<<" = "<<numeroTbl * i<<endl;
 			}
-			cout<<
-				"for(int i = 1;i<=10;i++){
-				"cout<<numeroTbl<<' X '<<i<<' = '<<numeroTbl * i<<endl;"
-			"}"
-			
 					
 			break;
+			
 		case 2:
+			while(i<=10){
+				i++;
+				cout<<numeroTbl<<" X "<<i<<" = "<<numeroTbl * i<<endl;
+				
+			}
 			break;
 		case 3:
+			do{
+				
+				i++;
+				cout<<numeroTbl<<" X "<<i<<" = "<<numeroTbl * i<<endl;
+				
+			}while(i<10);
 			break;
 	}
 	
